@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Section1Left = (props) => (
+const Section2Left = (props) => (
     <div className="section2-left">
         <div>
             <p>STUDIO</p>

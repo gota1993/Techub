@@ -132,7 +132,7 @@ body {
 
 .section1-right {
   flex: 5;
-  background: url('/Class/november16/images/main.jpg');
+  background: url('/images/main.jpg');
   height: 800px;
   background-size: cover;
 }
