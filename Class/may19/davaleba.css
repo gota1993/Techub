@@ -1,0 +1,59 @@
+div.ex1,
+div.ex2,
+div.ex3 {
+    width: 250px;
+    height: 250px;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.cont {
+    display: inline-block;
+    margin: 15px;
+}
+
+div.ex11 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: darkgrey;
+    bottom: 0;
+    right: 0;
+
+}
+
+div.ex22 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: darkgrey;
+    bottom: 0;
+    left: 0;
+}
+
+div.ex222 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    top: 0px;
+    right: 0px;
+}
+
+div.ex33 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: darkgrey;
+    top: 0px;
+    left: 0px;
+}
+
+div.ex333 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    top: 0px;
+    right: 0px;
+}

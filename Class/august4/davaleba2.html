@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .number {
+            background: lightblue;
+            text-align: center;
+            padding: 10px;
+            width: 25px;
+            height: 7px;
+            margin: 2px;
+            float: left;
+            border-radius: 5px;
+            display: grid;
+            align-content: center;
+            cursor: pointer;
+            -webkit-user-select: none;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .buttons {
+            display: grid;
+            width: 50px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <div class='clear'></div>
+    <div class='buttons'>
+        <button id='shuffle'>Shuffle</button>
+        <button id='asc'>Ascending</button>
+        <button id='desc'>Descending</button>
+    </div>
+
+
+    <script src="davaleba2.js"></script>
+</body>
+
+</html>

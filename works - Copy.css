@@ -1,0 +1,13 @@
+.flex-nav li {
+    flex: 3;
+}
+
+.flex-nav li a {
+    line-height: 100%;
+}
+
+.flex-nav li:first-child {
+    flex: 1;
+    background: #EF3E36;
+    display: inline-block;
+}

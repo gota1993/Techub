@@ -1,0 +1,15 @@
+html
+    head
+        title Products
+    body
+        include nav.pug
+        h1= productName
+        div
+            img(src= productImg, width='250')
+        div Price: #{productPrice}$
+        div Description: #{productDesc}
+        div
+            form(method='post')
+                span Quantity
+                input(type='number' name= productValue value= productValue)
+                button Add to cart

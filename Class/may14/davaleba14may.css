@@ -1,0 +1,61 @@
+div {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#main {
+    width: 500px;
+    height: 200px;
+    display: block;
+    border-radius: 2%;
+}
+
+#green {
+    background-color: green;
+}
+
+#green:hover ~ #main {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#red:hover ~ #main {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#blue:hover ~ #main {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#yellow:hover ~ #main {
+    background-color: yellow;
+}
+
+#black {
+    background-color: black;
+}
+
+#black:hover ~ #main {
+    background-color: black;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#orange:hover ~ #main {
+    background-color: orange;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Calculator() {
+
+            let operations = {
+                "+": (a, b) => a + b,
+                "-": (a, b) => a - b,
+            };
+
+            this.calculate = function(str) {
+                this.splitted = str.split(" ");
+                this.operation = this.splitted[1];
+                this.number1 = Number(this.splitted[0]);
+                this.number2 = Number(this.splitted[2]);
+
+                return operations[this.operation](this.number1, this.number2)
+            }
+
+            this.addMethod = function(name,func) {
+
+            operations[name] = func;
+            }   
+        }
+
+        let calc = new Calculator ();
+        alert(calc.calculate("3 + 7"))
+
+        let powerCalc = new Calculator();
+        powerCalc.addMethod("*", (a, b) => a * b)
+        powerCalc.addMethod("/", (a, b) => a / b)
+        powerCalc.addMethod("**", (a, b) => a ** b)
+
+        let result = powerCalc.calculate("2 ** 3");
+        alert(result)
+        
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+.images {
+    width: 200px;
+    display: inline-block;
+    padding: 1px;
+    border: 1px solid lightgray;
+}
+
+img {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.images:hover {
+    border: 2px solid black;
+    padding: 0;
+}

@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title= title
+    body
+        include head.pug
+        h1= message
+        hr
+        a(href="#") img
+        ul#menu.myclass
+            each n in numbers
+                li=n
+        p.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quo in ipsa dignissimos accusantium illo, qui, voluptatibus veniam aliquam consequatur nesciunt aspernatur laboriosam id veritatis pariatur? Voluptate pariatur eos repellendus!
+        script.
+            let num = 8
+            if (num < 10) 
+                console.log(`${num} < 10`)
+            else 
+                console.log(`${num} > 10`)
+
+        - let count = 0
+        ul
+            while count < 13
+                li= count++
+        include footer.pug

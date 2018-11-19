@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function generateHTML(count, tagName, parentSelector, content, childCount, childElement) {
+
+            for (let i = 0; i < count; i++) {
+                let body = document.querySelector("body")
+                let newParentSelector = document.createElement(parentSelector)
+                let newTagName = document.createElement(tagName)
+                body.appendChild(newParentSelector)
+                newParentSelector.appendChild(newTagName)
+                if (childElement == undefined) {
+                    let newContent = document.createTextNode(content)
+                    newTagName.appendChild(newContent)
+                }
+
+                else {
+                    for (let i = 0; i < childCount; i++) {
+                        let newChildElement = document.createElement(childElement)
+                        let newChildContent = document.createTextNode(content)
+                        newTagName.appendChild(newChildElement)
+                        newChildElement.appendChild(newChildContent)
+                    }
+                }
+            }
+        }
+
+        generateHTML("3", "div", "section", "amirspasalari", "2", "h1")
+
+    </script>
+</body>
+
+</html>

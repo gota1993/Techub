@@ -1,0 +1,17 @@
+{
+  "name": "october7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "pug-dev": "nodemon pug.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
+}

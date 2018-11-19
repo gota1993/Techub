@@ -1,0 +1,780 @@
+body, html {
+    width: 100%;
+    user-select: none;
+}
+
+h2, p, h3 {
+    color: #032057
+}
+
+h3 {
+    font-weight: 700
+}
+
+div:focus, 
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#subscribe-input:focus {
+    outline: none;
+}
+
+header,
+footer,
+.stroke ul li a {
+    position: relative
+}
+
+#main-image {
+    width: 100%;
+    height: auto;
+}
+
+#footer-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+#navigation {
+    position: absolute;
+    top: 8px;
+    left: 10%;
+    font-size: 18px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center
+}
+
+#navigation ul li {
+    display: inline-block;
+}
+
+.stroke ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Fira Sans Condensed';
+}
+
+.stroke ul li a,
+.stroke ul li a:after,
+.stroke ul li a:before {
+    transition: all .5s;
+}
+
+.stroke ul li a:hover {
+    color: #54d7b7
+}
+
+.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #54d7b7;
+  height: 1px;
+}
+
+.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+#navigation-brand-name {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: white;
+    padding-left: 20px;
+    font-family: 'Lobster';
+    font-style: italic;
+    font-weight: bold;
+}
+
+#navigation-brand-name:hover {
+    text-shadow: 0 0 30px #54d7b7
+}
+
+
+#main-nav-left ul li,
+#main-nav-right ul li {
+    padding: 10px;
+    padding-top: 38px;
+}
+
+#company-name-slogan {
+    position: absolute;
+    top: 160px;
+    left: 25%;
+    text-align: center;
+    width: 50%;
+}
+
+#company-name-slogan,
+#footer-navigation-right-bottom p{
+    text-align: center
+}
+
+#company-name-slogan h1,
+#company-name-slogan h3 {
+    color: white;
+}
+
+#company-name-slogan h1 {
+    font-family: 'Lobster';
+    font-size: 4em;
+    margin-bottom: 0;
+    font-style: italic
+}
+
+#company-name-slogan h3 {
+    font-family: 'Fira Sans Condensed';
+    font-size: 2em;
+    margin-top: 0
+}
+
+#button-div {
+    position: absolute;
+    width: 20%;
+    top: 500px;
+    left: 40%;
+    display: flex;
+    justify-content: center
+}
+
+#subcribe-div .button{
+    position: relative;
+    top: -45px;
+    left: 62%;
+}
+
+#subcribe-div button {
+    color: white;
+    background: rgb(49, 145, 49);
+    margin: -30px;
+    z-index: 2;
+}
+
+#subcribe-div {
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    width: 40%;
+    text-align: center;
+}
+
+.headline-text {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Fira Sans Condensed';
+    font-weight: 700;
+    margin-top: 0;
+}
+
+#subscribe-input {
+    width: 63%;
+    height: 45px;
+    border-radius: 25px;
+    border: 0;
+    background: white;
+    box-shadow: -5px 5px 5px rgba(97, 97, 136, 0.671);
+    padding-left: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+#footer-navigation ul li {
+    list-style: none;
+    padding: 8px 0;
+}
+
+#footer-navigation {
+    position: absolute;
+    bottom: 100px;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#footer-navigation-travel,
+#footer-navigation-company,
+#footer-navigation-resourses {
+    flex: 1
+}
+
+#footer-navigation-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column
+}
+
+#footer-navigation h2 {
+    margin-left: 38px;
+    text-transform: uppercase
+}
+
+#footer-navigation-right-top #navigation-brand-name {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#footer-navigation-right-bottom p {
+    font-family: 'Fira Sans Condensed';
+    font-size: 1.5em;
+}
+
+.btn-1 {
+    background-color: rgb(255, 255, 255);
+  }
+
+.btn-1 .round {
+    background-color: #54d7b6c2;
+}
+  
+#button-div a,
+#button-div-nonposition a {
+    text-decoration: none;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding: 12px 53px 8px 23px;
+    color: black;
+    font-family: 'Fira Sans Condensed';
+    font-weight: bold;
+    position: relative;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+a span {
+    position: relative;
+    z-index: 3;
+}
+
+a .round {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 2;
+}
+
+a .round i {
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    left: 50%;
+    margin-left: -4px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.txt {
+    font-size: 14px;
+    line-height: 1.45;
+}
+  
+.button a:hover {
+    padding-left: 48px;
+    padding-right: 28px;
+  }
+
+.button a:hover .round {
+    width: calc(100% - 6px);
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.button a:hover .round i {
+    left: 8%;
+}
+
+.round i {
+    color: white;
+}
+
+.green-button {
+    background: #54d7b7;
+}
+
+.center-button {
+    margin-left: 25%
+}
+
+
+.green-button .round {
+    background: rgba(255, 255, 255, 0.267);
+}
+
+.green-button .txt {
+    color: white;
+}
+
+#footer-navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer-navigation-right-bottom i:hover{
+    color: #54d7b7;
+    text-shadow: 0 0 2px black;
+}
+
+#popular {
+    margin: 50px 0;
+}
+
+#we-are-experts,
+#popular,
+.popular-images {
+    display: flex;
+    width: 100%;
+}
+
+#popular-text,
+.popular-images {
+    flex: 1
+}
+
+#popular-text h2,
+#popular-text p,
+#button-div-nonposition {
+    text-align: left;
+    margin-left: 20%;
+}
+
+
+
+#popular-text p {
+    line-height: 2em
+}
+
+.popular-images > div {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.popular-images .popular-images-bangkok {
+    background: url('http://s1.travix.com/as/asia-thailand-bangkok-grand-palace-medium.jpg');
+    background-size: cover;
+}
+
+.popular-images .popular-images-singapore {
+    background: url('https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F150806121501-sg-50---lead-image.jpg');
+    background-size: cover
+}
+
+.popular-images .popular-images-lasvegas {
+    background: url('http://res.cloudinary.com/simpleview/image/upload/v1497480003/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg');
+    background-size: cover
+}
+
+.popular-places div {
+    display: flex
+}
+
+.popular-places div p {
+    font-family: 'Fira Sans Condensed';
+    font-size: 2.5em;
+    color: white;
+    margin: auto;
+    font-weight: 700;
+    opacity: 1;
+}
+
+#we-are-experts > div:nth-child(1) {
+    flex: 3;
+    background: url('https://dianegottsman.com/wp-content/uploads/2017/03/Business-Meeting-and-Conference-Etiquette.jpg');
+    background-size: cover;
+    margin-left: 10%;
+    max-height: 500px;
+    min-width: 400px;
+}
+
+#we-are-experts-text {
+    flex: 5
+}
+
+#we-are-experts {
+    margin-bottom: 40px;
+}
+
+#we-are-experts-text #button-div-nonposition {
+    padding-left: 40px;
+    margin-left: 0
+}
+
+#we-are-experts .headline-text,
+#popular-packages .headline-text,
+#we-are-experts-text p {
+    padding-left: 40px;
+    text-align: left;
+    padding-right: 30%;
+}
+
+#popular-packages h2 {
+    margin-left: 7%;
+}
+
+.popular-packages-list {
+    font-family: 'Fira Sans Condensed';
+    text-align: center;
+    display: flex;
+    width: 80%;
+    margin: 40px auto;
+    justify-content: space-between;
+}
+
+.popular-packages-list > div {
+    width: 23%;
+    position: relative;
+    background: #54d7b613
+}
+
+.popular-packages-list .price {
+    position: absolute;
+    bottom: 95px;
+    right: -25px;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    font-family: 'Fira Sans Condensed';
+    font-size: 1.2em;
+    box-shadow: 2px 2px 10px black;
+    font-weight: 700;
+}
+
+.popular-packages-list div p,
+.popular-packages-list div h3 {
+    margin-top: 20px;
+}
+
+.popular-packages-list div i {
+    color: gold
+}
+
+#barcelona-image,
+#chicago-image,
+#kathmandu-image,
+#paris-image {
+    background-size: cover;
+    width: 100%;
+    height: 440px;
+}
+
+#barcelona-image {
+    background-image: url('http://www.cwmun.org/wp-content/uploads/2016/05/cwmun-barcelona.png')
+}
+
+#chicago-image {
+    background-image: url('https://www.togotopinfos.com/wp-content/uploads/2018/08/chicago.jpg')
+}
+
+#kathmandu-image {
+    background-image: url('https://www.welcomenepal.com/uploads/destination/kathmandu-oy-lt2.jpeg')
+}
+
+#paris-image {
+    background-image: url('https://kissinpariscdn-adagionstudio.netdna-ssl.com/wp-content/uploads/2016/02/Paris-photographer-1.jpg?x61852')
+}
+
+#video {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#image-gallery h2,
+#travellers-qoutes h2,
+#valuable-customers .headline-text {
+    text-align: left;
+    margin-left: 20%;
+    width: 60%;
+}
+
+#image-gallery-photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px auto;
+}
+
+#image-gallery-photos div {
+    width: 33.33333333%;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    color: white;
+    font-family: 'Fira Sans Condensed';
+    font-size: 2.5em;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#image-gallery-photos > div:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1537810461663-e5a5f16ea47e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=705c2ac162d76525c89a5d92e4cc2477&auto=format&fit=crop&w=1704&q=80');
+    background-size: cover;
+} 
+#image-gallery-photos > div:nth-child(1):hover {
+    background: url('https://images.unsplash.com/photo-1537810461663-e5a5f16ea47e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=705c2ac162d76525c89a5d92e4cc2477&auto=format&fit=crop&w=1704&q=80');
+    background-size: cover;
+    text-shadow: 0 0 30px #54d7b7
+} 
+#image-gallery-photos > div:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1529523432680-4e2a3f0c8ff8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fa1686bc4696fb01f7b16f551a477a8c&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+} 
+#image-gallery-photos > div:nth-child(2):hover {
+    background:url('https://images.unsplash.com/photo-1529523432680-4e2a3f0c8ff8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fa1686bc4696fb01f7b16f551a477a8c&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    text-shadow: 0 0 30px #54d7b7
+} 
+#image-gallery-photos > div:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1482690205767-61deebe15ef7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=75eec1458885cfa3a3509ba5b421a45e&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+} 
+#image-gallery-photos > div:nth-child(3):hover {
+    background:url('https://images.unsplash.com/photo-1482690205767-61deebe15ef7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=75eec1458885cfa3a3509ba5b421a45e&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    text-shadow: 0 0 30px #54d7b7
+} 
+#image-gallery-photos > div:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://aer.eu/wp-content/uploads/2016/12/london-landscape-top-view.jpg');
+    background-size: cover;
+} 
+#image-gallery-photos > div:nth-child(4):hover {
+    background:url('https://aer.eu/wp-content/uploads/2016/12/london-landscape-top-view.jpg');
+    background-size: cover;
+    text-shadow: 0 0 30px #54d7b7
+} 
+#image-gallery-photos > div:nth-child(5) {
+    background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('http://blog.topazlabs.com/wp-content/uploads/2015/01/DSC2159-Edit1.jpg');
+    background-size: cover;
+
+} 
+#image-gallery-photos > div:nth-child(5):hover {
+    background: url('http://blog.topazlabs.com/wp-content/uploads/2015/01/DSC2159-Edit1.jpg');
+    background-size: cover;
+    text-shadow: 0 0 30px #54d7b7
+
+} 
+#image-gallery-photos > div:nth-child(6) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://farm1.nzstatic.com/_proxy/imageproxy_1y/serve/queenstown-in-spring.jpg?focalpointx=54&focalpointy=47&height=660&outputformat=jpg&quality=75&source=3491132&transformationsystem=focalpointcrop&width=1920&securitytoken=B028041DA8388689A21FE7F2A670BAAB');
+    background-size: cover;
+} 
+#image-gallery-photos > div:nth-child(6):hover {
+    background:url('https://farm1.nzstatic.com/_proxy/imageproxy_1y/serve/queenstown-in-spring.jpg?focalpointx=54&focalpointy=47&height=660&outputformat=jpg&quality=75&source=3491132&transformationsystem=focalpointcrop&width=1920&securitytoken=B028041DA8388689A21FE7F2A670BAAB');
+    background-size: cover;
+    text-shadow: 0 0 30px #54d7b7
+} 
+
+.popular-people {
+    display: flex;
+    flex-direction: column;
+    background: #54d7b613;
+    padding-top: 15px;
+    box-shadow: -5px 5px 20px #54d7b634;
+}
+
+.popular-people div {
+    flex: 1;
+    text-align: center;
+}
+
+#popular .popular-images img {
+    width: 90%;
+    height: 220px;
+    border-radius: 50%;
+    border: 25px solid #54d7b7;
+}
+
+#valuable-customers .popular-people img {
+    width: 75%;
+    border-radius: 50%;
+    height: 220px;
+}
+
+.popular-people h2 {
+    margin-top: 30px;
+}
+
+.popular-people .button {
+    width: 50px;
+    margin-left: 70px;
+}
+
+.persons-social-networks {
+    font-size: 1.6em;
+}
+
+.popular-people div h2 {
+    text-align: center;
+}
+
+.persons-social-networks i:nth-child(1) {
+    color:#3b5998 
+}
+
+.persons-social-networks i:nth-child(2) {
+    color: #0077b5
+}
+
+.persons-social-networks i:nth-child(3) {
+    color: #38A1F3
+}
+
+.border-div {
+    border: 10px solid #54d7b7;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.qoute-container {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.qoute-div {
+    position: relative;
+    right: -15%;
+    top: 20%;
+    width: 80%;
+    height: 450px;
+    background: #f7fffc;
+    box-shadow: 0 0 20px #54d7b649;
+    display: flex;
+    flex-direction: column
+}
+
+.qoute-photos{
+    flex: 3
+}
+
+.qoute-qoute,
+.lousifa {
+    flex: 2
+}
+
+.qoute-photos {
+    position: relative;
+    margin-top: 20px;
+}
+
+.qoute-qoute {
+    width: 100%;
+    display: flex
+}
+
+.qoute-qoute p {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    line-height: 1.6em;
+}
+
+.lousifa {
+    text-align: center;
+}
+
+#travellers-qoutes .lousifa h2 {
+    text-align: center;
+}
+
+.qoute-photos img {
+    width: 17%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.qoute-photos img:nth-child(1) {
+    position: absolute;
+    top: 5%;
+    left: 30%
+}
+
+.qoute-photos img:nth-child(2) {
+    position: absolute;
+    top: 5%;
+    left: 42%;
+    z-index: 100
+
+
+}
+
+.qoute-photos img:nth-child(3) {
+    position: absolute;    
+    top: 5%;
+    left: 55%;
+}
+
+.lines {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(180, 180, 180)
+}
+
+.lines span:nth-child(1) {
+    color:#54d7b7;
+}
+
+.fa-quote-left,
+.fa-quote-right
+{
+    position: absolute;
+    font-size: 2.2em;
+    color: rgb(180, 180, 180)
+}
+
+.fa-quote-left {
+    left: 13%;
+    top: 50%;
+}
+
+.fa-quote-right {
+    right: 13%;
+    top: 60%
+}
+
+i.fab {
+    cursor: pointer
+}
+
+#footer-navigation-right-top #navigation-brand-name {
+    color: #032057
+}
+
+#image-gallery-photos p {
+    color: white;
+}

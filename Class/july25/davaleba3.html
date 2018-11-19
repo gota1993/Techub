@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            margin: auto;
+        }
+        tr, td, th {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        th {
+            background: rgb(180, 179, 179)
+        }
+        body {
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <table>
+        <tr>
+            <th>SU</th>
+            <th>MO</th>
+            <th>TU</th>
+            <th>WE</th>
+            <th>TH</th>
+            <th>FR</th>
+            <th>SA</th>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr id='hiddendiv'>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    <script>
+        function createCalendar(year, month) {
+            let tds = document.getElementsByTagName('td')
+            let dayscount = new Date(year, month, 0).getDate()
+            let monthFirstDay =  new Date(`${year}-${month}-01`).getDay()
+
+            if (!(monthFirstDay == 5 && dayscount == 31 || monthFirstDay == 6 && dayscount >=30)) {
+                hiddendiv.style.display = 'none'
+            }
+            for (i=monthFirstDay; i<dayscount+monthFirstDay; i++) {
+                tds[i].textContent = (i-monthFirstDay)+1
+            }
+        }
+
+        createCalendar(2018,6)
+    </script>
+</body>
+
+</html>

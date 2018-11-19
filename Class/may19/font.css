@@ -1,0 +1,60 @@
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+
+h1.larger {
+    font-size: 3em;
+}
+
+
+.elements {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 200px;
+}
+
+.elements:hover::before {
+    content: "HTML5";
+    color: blue;
+    font-size: 0.8em;
+}
+
+.elements:hover::after {
+    content: "JS";
+    color: red;
+    font-size: 0.8em;
+}
+
+.colorred {
+    color: red;
+}
+
+.colorblue {
+    color: blue;
+}
+
+.colorgreen {
+    color: green;
+}

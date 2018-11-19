@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #content {
+            border: 1px solid black;
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            display: flex;
+            background: lightblue;
+            padding: 10px;
+        }
+
+        #contentText {
+            margin: auto;
+            padding: 10px;
+        }
+
+        .headerDiv {
+            margin-bottom: 15px;
+        }
+
+        .contentDiv button,
+        .contentDiv div {
+            float: left
+        }
+
+        .contentDiv button {
+            margin: 10px;
+            margin-top: 150px;
+        }
+
+        input {
+            margin: 5px 32px
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="headerDiv">
+        <input type="text" name="fontSize" id="fontsize" placeholder="Font Size">
+        <button id='randomColor'>Random Color</button>
+        <input type="text" name="border" id="border" placeholder="Border">
+    </div>
+    <div class="contentDiv">
+        <button id="back">Back</button>
+        <div id="content">
+            <p id="contentText">Text Being Text Text Being Text Text Being Text Text Being Text Text Being Text Text Being Text Text Being Text</p>
+        </div>
+        <button id="next">Next</button>
+    </div>
+
+    <script src="davaleba.js"></script>
+</body>
+
+</html>

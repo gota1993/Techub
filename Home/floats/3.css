@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+}
+
+.pirveli {
+    background: green;
+}
+
+.meore {
+    background: blue;
+}
+
+.mesame {
+    background: red;
+}
+
+div {
+    width: 33.33%;
+    height: 500px;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    clear: both;
+}

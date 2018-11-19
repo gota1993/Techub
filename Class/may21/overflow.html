@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 101</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body > div:nth-of-type(1) {
+            width: 250px;
+            height: 100px;
+            background-color: #c0c0c0;
+            overflow: hidden;
+        }
+
+        .outer {
+            border: 5px dotted rgb(214, 0, 0);
+            border-radius: 5px;
+            width: 450px;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+
+        .float {
+            padding: 10px;
+            border: 5px solid rgba(0, 214, 29, 0726);
+            border-radius: 5px;
+            background-color: rgba(50, 0, 214, 0719);
+            color: #fff;
+            float: left;
+            width: 200px;
+            margin: 0 20px 0 0;
+        }
+
+        .overflow {
+            overflow: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ratione nesciunt laudantium asperiores, eum adipisci. Vel possimus
+        officia voluptates quas dolore esse, sit dolores itaque. Fuga dolor sint et quisquam! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Vel ratione nesciunt laudantium asperiores, eum adipisci. Vel possimus officia voluptates
+        quas dolore esse, sit dolores itaque. Fuga dolor sint et quisquam!
+    </div>
+
+    <hr>
+
+    <h2>floated: Plenty of Text</h2>
+
+    <div class="outer">
+        <div class="float">
+            I am a floated element
+        </div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis assumenda, ex tenetur officia, dignissimos pariatur facere cupiditate expedita voluptate id non quos sapiente in numquam placeat vel maiores blanditiis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis assumenda, ex tenetur officia, dignissimos pariatur facere cupiditate expedita voluptate id non quos sapiente in numquam placeat vel maiores blanditiis.
+    </div>
+
+    <h2>floated: not enough text</h2>
+
+    <div class="outer">
+        <div class="float">
+            I am a floated element
+        </div>
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+        Lorem, ipsum dolor
+    </div>
+
+    <h2>floated: overflow solution</h2>
+
+    <div class="outer overflow">
+        <div class="float">
+            I am a floated element
+        </div>
+        the outer text has overflow: auto
+    </div>
+
+
+</body>
+
+</html>

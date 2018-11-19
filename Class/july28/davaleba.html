@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #result-left,
+        #result-right,
+        #result-center,
+        #left,
+        #right {
+            float: left;
+            text-align: center;
+        }
+
+        input[type=text] {
+            margin: 2px;
+            margin-right: 20px;
+        }
+        
+        hr {
+            margin: 20px 0;
+        }
+
+        #right,
+        #result-left,
+        #result-center {
+            margin-right: 30px;
+        }
+
+        h4,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        h4 {
+            border: 1px solid gray;
+            padding: 2px 5px;
+        }
+
+        p {
+            color: darkgreen;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 5px;
+            background: green;
+            color: white;
+            resize: none
+        }
+
+        #resultdiv {
+            display: none;
+            margin-left: 0px;
+        }
+
+        #surati {
+            display: none;
+            margin-left: 10px;
+            width: 200px;
+        }
+
+        #line {
+            display: none;
+            width: 580px;
+            float: left;
+        }
+
+        #clearboth {
+            clear: both
+        }
+    </style>
+</head>
+
+<body>
+    <div id='left'>
+        <label for="Day">Day</label>
+        <br>
+        <input type="text" name="Day" id="day">
+        <br>
+
+        <label for="Month">Month</label>
+        <br>
+        <input type="text" name="Day" id="month">
+        <br>
+
+        <label for="Year">Year</label>
+        <br>
+        <input type="text" name="Day" id="year">
+        <br>
+
+        <label for="City">City</label>
+        <br>
+        <input type="text" name="Day" id="city">
+
+    </div>
+
+    <div id="right">
+        <label for="About">About</label>
+        <br>
+
+        <textarea name="about" id="about" cols="20" rows="7"></textarea>
+        <br>
+
+        <button id='saveButton'>save</button>
+    </div>
+
+    <img id='surati' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajJ9wdROLeN4dAYaFyPdzG00vL1nb4Rv3AgDk8dGoN-4gv7y-"
+        alt="">
+    <hr id='line'>
+    <div id='clearboth'></div>
+    <div id='resultdiv'>
+        <div id='result-left'>
+            <h4>Your Birthday is</h4>
+            <br>
+            <p id='dayresult'></p>
+
+            <h4>Your BirthMonth is</h4>
+            <br>
+            <p id='monthresult'></p>
+        </div>
+
+        <div id='result-center'>
+            <h4>Your BirthYear is</h4>
+            <br>
+            <p id='yearresult'></p>
+
+            <h4>You live in</h4>
+            <br>
+            <p id='cityresult'></p>
+
+
+
+        </div>
+
+        <div id='result-right'>
+            <h4>Your about me</h4>
+            <br>
+            <p id='aboutresult'></p>
+
+        </div>
+    </div>
+
+    <script src="davaleba.js"></script>
+</body>
+
+</html>

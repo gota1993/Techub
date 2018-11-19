@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function Car() {
+            this.name,
+            this.color,
+            this.brand,
+            this.setName = function (strname) {
+                this.name = strname;
+                return this;
+            },
+            this.setColor = function (strcolor) {
+                this.color = strcolor;
+                return this;
+            },
+            this.setBrand = function (strbrand) {
+                this.brand = strbrand;
+                return this;
+            },
+            this.save = function () {
+                console.log(`saving ${this.name}, color - ${this.color}, brand - ${this.brand}`)
+            }
+        }
+
+        let car = new Car()
+            .setName('Jetta')
+            .setColor('Platinum Gray Metallic')
+            .setBrand('VW')
+            .save();
+
+    </script>
+
+</body>
+
+</html>

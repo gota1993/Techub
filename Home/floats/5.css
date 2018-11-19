@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header1 {
+    width: 25%;
+    height: 300px;
+    background-color: yellow;
+    float: left;
+}
+
+.header2 {
+    width: 50%;
+    height: 300px;
+    background-color: pink;
+    overflow: auto;
+    float: left;
+}
+
+.header3 {
+    width: 25%;
+    height: 300px;
+    background-color: rgb(182, 24, 182);
+    overflow: auto;
+}
+
+.pirveli {
+    background: green;
+    width: 25%;
+}
+
+.meore {
+    background: blue;
+    width: 50%;
+}
+
+.mesame {
+    background: red;
+    width: 25%;
+}
+
+main div {
+    height: 500px;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    clear: both;
+}

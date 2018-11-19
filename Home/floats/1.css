@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pirveli {
+    background: green;
+}
+
+.meore {
+    background: blue;
+}
+
+.mesame {
+    background: red;
+}
+
+div {
+    width: 100%;
+    height: 300px;
+}

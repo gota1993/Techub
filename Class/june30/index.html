@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let arr = ["I", "<3", "Javascript"]
+        // let removed = arr.slice(1, 2)
+
+        // let nums = [2,4,9,5,7,13,24,1]
+
+        // let users = [
+        //     { id: 1, name: "Gela"},
+        //     { id: 2, name: "John"},
+        //     { id: 3, name: "Jimsheri"},
+        //     { id: 4, name: "Ani"},
+        //     { id: 5, name: "Koka"},
+        // ]
+
+        // let foundUser = users.find (user => user.id == 2)
+        // let filtered = users.filter (user => user.id < 4)
+        // // console.log(filtered)
+
+        // let doubled = nums.map((number, index, arr) => {
+        //     return number * 2;
+        // });
+
+        // // console.log(doubled)
+
+        // let html = users.map (user => {
+        //     return `
+        //     <div class="user">
+        //         <h2 class="title"> ${user.name} <small> ID - ${user.id} </small></h2>
+        //     </div>
+        //     `;
+        // })
+
+        // document.body.innerHTML = html.join("")
+        // console.table(html)
+
+        // function compare (a,b) {
+        //     if (a > b) return 1;
+        //     if (a == b) return 0;
+        //     if (a < b) return -1;  
+        // }
+
+        // // console.log (nums.sort((a, b) => {return a - b;}));
+
+        //#region *************** დავალება 1 **************
+
+        // let john = { name: "John", age: 25 };
+        // let adam = { name: "Adam", age: 30 };
+        // let mary = { name: "Mary", age: 28 };
+
+        // let arr = [john, adam, mary]
+
+        // function compare(a, b) {
+        //     if (a.name > b.name) return 1;
+        //     if (a.name < b.name) return -1;
+        // }
+
+        // function sortByName(ar) {
+        //     ar.sort(compare)
+        // }
+
+        // sortByName(arr)
+
+        // alert(arr[1].name)
+
+        //#endregion
+
+        //#region *************** დავალება 2 **************
+        // let mixedStr = ["John", "Harry", "Mary", "Harry", "Beth", "Harry", "Mary", "John"];
+
+        // let uniqueStr = mixedStr.filter( (value, index) => {
+        //     return mixedStr.indexOf(value) === index;
+        // })
+
+        // let values = ["John", "Harry", "Mary", "Harry", "Beth", "Harry", "Mary", "John"];
+        // let valuesSet = new Set(values);
+
+        //#endregion
+
+        //#region *************** დავალება 3 **************
+        // let john = { name: "John", surname: "Smith", id: 1 }
+        // let pete = { name: "Pete", surname: "Hunt", id: 2 }
+        // let mary = { name: "Mary", surname: "Key", id: 3 }
+
+        // let users = [john, pete, mary]
+
+        // let usersMapped = users.map(user => {
+        //     return { fullName: `${user.name} ${user.surname}`, id: user.id }
+        // })
+
+        // alert(usersMapped[0].fullName)
+        //#endregion
+
+        // function* generator() {
+        //     yield 'H'
+        //     yield 'e'
+        //     yield 'l'
+        //     yield 'l'
+        //     yield 'o'
+        // }
+
+        // // Array.from(), ...var, for value of items
+        // let g = generator ();
+
+        // console.log(typeof g[Symbol.interator] === 'function')
+
+        // // console.log(typeof g.next() === 'function')
+
+        // console.log(g[Symbol.iterator]() === g)
+        // console.log([...g])
+
+        //#region *************** დავალება 4 **************
+
+        // nums = [3,6,4,3,1,5,6,6,17,2]
+
+        // function subArr(arr) {
+        //     let sum = 0;
+        //     let mySet = new Set();
+
+        //     for (let num of arr) {
+        //         sum += num;
+        //         if (mySet.has(sum)){
+        //             return true
+        //         }
+        //         mySet.add(sum);
+        //     }
+        //     return false
+        // }
+
+        // console.log(subArr(nums))
+
+        //#endregion
+
+        // Date
+        // new Date ()
+        // new Date (milliseconds)
+        // new Date (datestring)
+        // new Date (year, month, hours, minutes, seconds, mseconds)
+
+        // let now = new Date()
+        // // console.log(now)
+        // // 1970 1 Jan
+
+        // let start = new Date(0)
+        // // console.log(start)
+
+        // let fromString = new Date ('2018-06-20')
+        // // console.log(fromString.toString())
+
+        // let fromConst = new Date (2018, 7, 30, 14, 32, 48, 50)
+        // // console.log(fromConst)
+
+        // // console.log(fromConst.getFullYear())
+        // // console.log(fromConst.getMonth())
+        // // console.log(fromConst.getDate())
+        // // console.log(fromConst.getHours())
+        // // console.log(fromConst.getDay())
+        // // console.log(fromConst.getMonth())
+
+        // console.log(fromConst.getUTCMonth())
+
+        //#region *************** დავალება 5 **************
+
+                    // function getSecondsToTomorrow() {
+                    //     let now = new Date();
+                    //     let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+                    //     let diff = tomorrow - now;
+                    //     return Math.round(diff / 1000)
+                    // }
+
+                    // function getSecondsToTomorrow2() {
+                    //     var now = new Date();
+                    //     var tomorrow = new Date(now);
+                    //     tomorrow.setHours(24, 0, 0, 0);
+                    //     return (tomorrow - now) / 1000;
+                    // }
+
+                    // console.log(getSecondsToTomorrow())
+                    // console.log(getSecondsToTomorrow2())
+
+        //#endregion
+
+    </script>
+</body>
+
+</html>

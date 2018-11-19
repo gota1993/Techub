@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        #left,
+        #right {
+            float: left
+        }
+
+        p {
+            margin: -3px;
+            padding: 0;
+        }
+
+        #right {
+            display: none;
+            margin-left: 20px;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin-top: 5px;
+        }
+
+        #save {
+            background: darkgreen;
+        }
+
+        #showInfo {
+            background: aqua
+        }
+
+        label {
+            font-weight: bold;
+            color: brown;
+        }
+
+        input {
+            margin: 10px 0;
+        }
+
+        .head {
+            font-weight: bold;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">
+            <label for="name">Name</label><br>
+            <input type="text" name="" id="namee"><br>
+            <label for="surname">Surname</label><br>
+            <input type="text" name="" id="surname"><br>
+            <label for="age">Age</label><br>
+            <input type="text" name="" id="age"><br>
+            <button id='save'>Save</button>
+            <button id='showInfo'>Show Info</button>
+        </div>
+
+        <div id="right">
+            <p class='head'>Name</p> <br>
+            <p id='resultName'></p><br>
+            <p class='head'>Surname</p><br>
+            <p id='resultSurname'></p><br>
+            <p class='head'>Age</p> <br>
+            <p id='resultAge'></p> <br>
+        </div>
+    </div>
+
+
+
+    <script src="../jquery.min.js"></script>
+    <script src="davaleba.js"></script>
+</body>
+
+</html>

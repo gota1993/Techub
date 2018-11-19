@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .border {
+            border: solid black 2px;
+            padding: 5px 0;
+            width: 100%
+        }
+
+        div.box {
+            width: 150px;
+            height: 150px;
+            background: red;
+            animation-name: transform;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes transform {
+            0% {
+                margin-left: calc(0% + 5px)
+            }
+            25% {
+                margin-left: calc(50% - 75px)
+            }
+            100% {
+                margin-left: calc(100% - 155px)
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="border">
+    <div class="box"></div>
+    </div>
+</body>
+</html>

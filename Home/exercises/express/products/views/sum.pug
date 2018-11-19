@@ -1,0 +1,38 @@
+html
+    head
+        title Products
+        style. 
+            table, th, tr, td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+                border-collapse: collapse;
+            }
+            h3 {
+                margin-left: 80px;
+            }
+    body
+        include nav.pug
+        h3 Summary
+        table
+            tr
+                th Name
+                th Price
+                th Quantity
+                th Total
+            tr
+                td Graphic Card
+                td 400
+                td= graphicQuantity
+                td= 400*graphicQuantity
+            tr
+                td HDMI Cable
+                td 5
+                td= hdmiQuantity
+                td= 5*hdmiQuantity
+            tr
+                td SSD Drive
+                td 100
+                td= ssdQuantity
+                td= 100*ssdQuantity
+        h3 total: #{100*ssdQuantity + 5*hdmiQuantity + 400*graphicQuantity} $

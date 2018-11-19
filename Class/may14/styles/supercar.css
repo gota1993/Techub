@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+#header3 {
+    color: #c20808;
+}

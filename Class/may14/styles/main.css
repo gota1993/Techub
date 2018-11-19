@@ -1,0 +1,74 @@
+* {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+li h2 {
+    color: green;
+}
+
+#myItem1 {
+    color: limegreen;
+}
+
+.myItem {
+    color:navy;
+}
+
+li.myItem {
+    color: orange;
+}
+
+[data-modal="open"] {
+    background-color: blueviolet;
+    padding: 13px;
+    color: white;
+}
+
+ul.menu > li {
+    display: inline-block;
+}
+
+/*
+ul.menu > li:first-child a, 
+ul.menu > li:last-child a {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+ul.menu > li:nth-child(2) a {
+    color: pink;
+} */
+
+ul.menu > li:nth-child(2n+1) a {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+} 
+
+/* .myclass:empty  carieli klasi */
+
+/* p + p {
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+} */
+
+/* p ~ p {
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+} */
+
+p + p:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+p + p:active {
+    background-color:blue;
+}
