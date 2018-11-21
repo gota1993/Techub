@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from '../../OtherComponents/Button'
+
 
 const Section2Left = (props) => (
     <div className="section2-left">
@@ -18,7 +20,7 @@ const Section2Left = (props) => (
         </p>
         </div>
         <div>
-            <div className='button small-button'>LEARN MORE</div>
+            <Button text={`LEARN MORE`}/>
         </div>
     </div>
 )

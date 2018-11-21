@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../OtherComponents/Button'
 
 const Section4Right = (props) => (
     <div className='section4-right' id='section4-right'>
@@ -12,9 +13,9 @@ const Section4Right = (props) => (
         </div>
 
         <div>
-            <div className='button small-button'>LEARN MORE </div>
+            <Button text={'LEARN MORE'}/>
         </div>
-        
+
     </div>
 )
 

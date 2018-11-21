@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../OtherComponents/Button'
 
 const SectionOutClientsMainDiv = (props) => (
     <div className='div-our-clients'>
@@ -13,7 +14,7 @@ const SectionOutClientsMainDiv = (props) => (
             </div>
         </div>
         <div>
-            <div className='button small-button'>VIEW ALL</div>
+            <Button text={'VIEW ALL'} />
         </div>
     </div>
 )

@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from '../../OtherComponents/Button'
+
 
 const Section3Footline = (props) => (
     <div className="section3-footline">
@@ -9,7 +11,7 @@ const Section3Footline = (props) => (
                 Accusantium nesciunt iusto dignissimos facere sint excepturi
                 asperiores vero delectus beatae non.
             </p>
-            <div className='button small-button'>CASE STUDY</div>
+            <Button text={'CASE STUDY'}/>
         </div>
 
         <div>

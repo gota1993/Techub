@@ -1,4 +1,6 @@
 import React from 'react'
+import BigButton from '../../OtherComponents/BigButton'
+
 
 const Section1Left = (props) => (
     <div className="section1-left">
@@ -10,23 +12,29 @@ const Section1Left = (props) => (
         </div>
 
         <div>
+
             <div>
                 <i className="fas fa-align-justify"></i>
             </div>
+
             <div>
                 <p>
                     Proin pharetra volutpat est dictum.
                     Cras pharetra molestie et laoreet tortor accumsan quis
-            </p>
+                </p>
             </div>
+
         </div>
 
         <div>
-            <div className='button'>LEARN MORE <i className="fas fa-chevron-right"></i></div>
+            <BigButton text={['LEARN MORE', <i className="fas fa-chevron-right"></i>]}/>
         </div>
 
         <div>
-            <p><i className="fas first-circle fa-circle"></i> <i className="fas second-circle fa-circle"></i> <i className="fas fa-circle"></i>
+            <p>
+                <i className="fas first-circle fa-circle"></i> 
+                <i className="fas second-circle fa-circle"></i>
+                <i className="fas fa-circle"></i>
                 <i className="fas fa-circle"></i>
             </p>
         </div>
