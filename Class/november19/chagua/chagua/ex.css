@@ -1,0 +1,12 @@
+.mario {
+    animation:move 8s cubic-bezier(0.2, 1, 1, 2);
+    position: absolute;
+    top: 100px;
+}
+
+.luigi{
+    animation:move 8s cubic-bezier(0.2, 0.1, 0.4, 2);
+    position: absolute;
+    top: -50px;
+}
+
