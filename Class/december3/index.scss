@@ -1,0 +1,32 @@
+@import 'normalize';
+
+.title {
+    color: #ff7729;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    box-sizing: border-box;
+    border: {
+        left: 10px solid black;
+        right: 5px solid red;
+        bottom: 3px dotted seagreen;
+        top: 6px dashed seagreen;
+    }
+
+    @media screen and (min-width: 960px) {
+        background-color: #ddd;
+    }
+
+    span {    
+        text-transform: uppercase;
+        font-style: italic;
+        color: #8b3e11;
+        cursor: pointer;
+        &:hover {
+            color: red;
+        }
+    }
+
+}
